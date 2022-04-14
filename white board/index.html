@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="field">
+        <canvas id="canvas"></canvas>
+        <div class="tools">
+            <!-- <butto ></button>
+             -->
+             <button onclick="undo()" class="button" type="button" >Undo</button>
+             <button onclick="clear_canvas(this)" class="button" type="button" >Clear</button>
+             <div onclick="change_color(this)" class="colour-field" style="background: red;"></div>
+             <div onclick="change_color(this)" class="colour-field" style="background: black;"></div>
+             <div onclick="change_color(this)" class="colour-field" style="background: green;"></div>
+             <div onclick="change_color(this)" class="colour-field" style="background: blue;"></div>
+             <input oninput="draw_color=this.value" type="color" class="color-picker">
+             <input type="range" min="1" max="50" class="pen-picker"
+             oninput="draw_width=this.value" value="1" >
+
+             <button class="button" onclick="canvas.height+=100;context.fillStyle=startc;context.fillRect(0,0,canvas.width,canvas.height);">resize</button>
+             <script src="script.js"></script>
+        </div>
+    </div>
+</body>
+</html>
